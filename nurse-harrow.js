@@ -1,7 +1,7 @@
 import {sortedHeroes} from './hero-order.js?v=136';
 import {expandedLoreMarkup} from './expanded-hero-lore.js?v=hero-layout-119';
 import {nurseOverview,nurseStory,nurseAbilities} from './nurse-profile-data.js?v=106';
-import {mountHeroDrag,mountAbilityIcons} from './seven-experience.js?v=names-176';
+import {mountHeroDrag,mountAbilityIcons} from './seven-experience.js?v=profile-copy-189';
 export const nurseHarrow={id:'nurse-harrow',name:'Nurse Harrow',nameAr:'نيرس هارو',image:'assets/lore/nurse-harrow-official.webp',portrait:'assets/lore/nurse-harrow-official.webp',ar:'نيرس هارو · متاحة الآن · تعالج الحلفاء بالإبر وتستنزف الأعداء بالعلق وتطلق الرعب من حقيبتها.'};
 export function mountNurseHarrow(host,roster,escape){
  roster=sortedHeroes(roster);
@@ -24,7 +24,7 @@ export function mountNurseHarrow(host,roster,escape){
  mountAbilityIcons(grid);
  const overview=host.querySelector('#nurse-panel-0');
  overview.className='hero-overview';
- overview.innerHTML='<div><p>تجمع نيرس هارو بين مساندة فريقها واستنزاف الخصم. تستخدم العلق لتقوية فوائدها وتجديد إبر العلاج، وتمنح حلفاءها دفعة بالأبخرة قبل فتح حقيبتها لإخافة الأعداء. تستفيد من التمركز قرب الفريق ومتابعة الحليف بالعلاج بعد الأبخرة.</p><p>تعمل في جناح ماربل هيل لعلاج الاستحواذ الخارق للطبيعة. أسلوبها صارم وعلاجها مخيف، لكنها تحمل آلام مرضاها داخل حقيبتها وتسعى لتجاوز حدودها وعلاج المدينة.</p></div>';
+ overview.innerHTML='<div><p>تعمل في جناح ماربل هيل لعلاج الاستحواذ الخارق للطبيعة. أسلوبها صارم وعلاجها مخيف، لكنها تحمل آلام مرضاها داخل حقيبتها وتسعى لتجاوز حدودها وعلاج المدينة.</p></div>';
  const story=host.querySelector('#nurse-panel-1');
  const source=document.createElement('div');source.innerHTML=nurseStory;
  const sections=[];let section;
