@@ -268,3 +268,9 @@ body.home-city .flip-back{background:linear-gradient(145deg,#1c3049,#101e32 68%,
 @media(prefers-reduced-motion:reduce){body.home-city .flip-card .flip-front,body.home-city .flip-card .flip-back{transition:none}}
 
 body.home-city .home-scene-root .socials .social.discord svg{width:12px!important;height:12px!important;min-width:12px;flex:0 0 12px;transform:none!important}
+
+/* Keep the community controls readable and the social row within phone screens. */
+body.home-city .home-scene-root .socials .social.instagram-social{flex-direction:row}
+body.home-city .home-scene-root .ar-community-join a{gap:8px}
+body.home-city .home-scene-root .ar-community-join a svg{width:20px;height:20px;flex:0 0 20px}
+@media(max-width:480px){body.home-city .home-scene-root .socials .social{width:44px!important;min-width:44px!important;justify-content:center}body.home-city .home-scene-root .socials .social span{display:none!important}}
